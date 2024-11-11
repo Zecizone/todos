@@ -1,4 +1,7 @@
-import React from 'react';
+//Для успешного теста надо раскомментировать import React, 
+//а для сборки проекта она должна быть закомментирована
+
+// import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import App from './App';
