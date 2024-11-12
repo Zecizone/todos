@@ -42,5 +42,15 @@
 }
 
 .list {
-  
+  font-size: 14px;
+}
+
+.conteiner {
+  width: 400px;
+  height: 500px;
+  background-color: bisque;
+}
+
+.buttons {
+  color: blueviolet;
 }

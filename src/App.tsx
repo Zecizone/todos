@@ -27,13 +27,15 @@ const App: React.FC = () => {
   return (
     <div>
       <h1>todos</h1>
+      <div className='conteiner'>
       <TodoForm addTodo={addTodo} />
       <TodoList todos={filteredTodos} toggleComplete={toggleComplete} />
       
-      <div>
+      <div className='buttons'>
         <button onClick={() => setFilter('all')} disabled={filter === 'all'}>Общий список задач</button>
         <button onClick={() => setFilter('incomplete')} disabled={filter === 'incomplete'}>Невыполненные задачи</button>
         <button onClick={() => setFilter('completed')} disabled={filter === 'completed'}>Выполненные задачи</button>
+      </div>
       </div>
     </div>
   );
