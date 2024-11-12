@@ -14,12 +14,13 @@ const TodoForm: React.FC<TodoFormProps> = ({ addTodo }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='form'>
       <input 
         placeholder="Введите новую задачу"
         type="text" 
         value={inputText} 
         onChange={(e) => setInputText(e.target.value)} 
+        className='inputForm'
       />
       <button type="submit">Добавить</button>
     </form>
